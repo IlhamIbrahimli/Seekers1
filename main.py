@@ -60,6 +60,7 @@ for interval in comma_separated_intervals:
         final_error = cash
         attempt_output = HedgeResult(final_error,trade_count)
         outputs[interval].append(attempt_output)
+    print(f"Interval {interval} done")
 
 results = {}
 for interval in comma_separated_intervals:
